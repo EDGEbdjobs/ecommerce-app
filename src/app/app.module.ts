@@ -3,24 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductListingComponent } from './products/product-listing/product-listing.component';
-import { ProductCreateComponent } from './product-create/product-create.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OrderCreateComponent } from './order-create/order-create.component';
+import { ProductsModule } from './products/products.module';
+import { NotFoundComponent } from './not-found/not-found.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductListingComponent,
-    ProductCreateComponent,
-    OrderCreateComponent
+    OrderCreateComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ProductsModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -18,6 +18,11 @@ export class ProductService {
     return this.httpClient.get<IProduct[]>(this.url);
    }
 
+   getProductById(id:number){
+    let getByIdUrl = this.url+"/"+id
+    return this.httpClient.get<IProduct>(getByIdUrl);
+   }
+
    addProduct(product:IProduct):Observable<IProduct>{
     
       return this.httpClient.post<IProduct>(this.url,product);

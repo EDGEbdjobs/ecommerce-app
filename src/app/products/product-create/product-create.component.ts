@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Output, Input } from '@angular/core';
-import { IProduct } from '../Models/Product';
-import { ProductService } from '../product.service';
+import { IProduct } from '../../Models/Product';
+import { ProductService } from '../../product.service';
 import { AbstractControl, FormBuilder, FormControl, FormControlDirective, FormGroup, NgForm, ValidatorFn, Validators } from '@angular/forms';
 
 @Component({
