@@ -7,6 +7,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OrderCreateComponent } from './order-create/order-create.component';
 import { ProductsModule } from './products/products.module';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { HomeComponent } from './home/home.component';
+import { NotPermittedComponent } from './not-permitted/not-permitted.component';
 
 
 @NgModule({
@@ -14,13 +16,14 @@ import { NotFoundComponent } from './not-found/not-found.component';
     AppComponent,
     OrderCreateComponent,
     NotFoundComponent,
+    HomeComponent,
+    NotPermittedComponent,
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    ProductsModule,
     AppRoutingModule,
   ],
   providers: [],
